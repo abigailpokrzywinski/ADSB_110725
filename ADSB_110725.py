@@ -24,15 +24,15 @@ matplotlib.use('Qt5Agg')
 
 # 1. Receiver Location (Latitude, Longitude)
 # Used to center the map and calculate distance.
-RECEIVER_LAT = XX.XXXX
-RECEIVER_LON = -XX.XXXX
+RECEIVER_LAT = 38.24865
+RECEIVER_LON = -77.55999
 
 
 
 
 # 2. Raspberry Pi IP Address
 # The local IP address of your Pi running dump1090.
-PI_IP_ADDRESS = "XXX.XXX.X.XXX"  # <-- CHANGE THIS
+PI_IP_ADDRESS = "192.168.1.212"  # <-- CHANGE THIS
 # (You can often find this on your router's admin page)
 
 # 3. dump1090 Data URL
@@ -40,7 +40,7 @@ PI_IP_ADDRESS = "XXX.XXX.X.XXX"  # <-- CHANGE THIS
 # If you use a different port, change it here.
 # DATA_URL = f"http://{PI_IP_ADDRESS}:8080/data/aircraft.json"
 # DATA_URL = f"http://{PI_IP_ADDRESS}/dump1090-fa/data/aircraft.json"
-DATA_URL = f"http://{PI_IP_ADDRESS}:8504/data/aircraft.json"
+DATA_URL = f"http://192.168.1.212:8504/data/aircraft.json"
 
 # 4. Map Zoom Level
 # 9 is a good starting point for a ~50-mile radius.
